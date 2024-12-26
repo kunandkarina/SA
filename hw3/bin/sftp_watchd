@@ -1,0 +1,15 @@
+#!/bin/sh
+
+path="/home/sftp/public/"
+
+while true; do
+        echo "Running"
+        for f in `ls $path`; do
+                if file "$path$f" | grep -q 'executable'; then
+                        echo "Got YA"
+                        logger -p local1.info -t sftp_watchd "$path$f violate file detected. Uploaded by `ls -l $path$f | awk '{print $3}'`."
+                        mv -f $path$f /home/sftp/hidden/.violated
+                fi
+        done
+        sleep1
+done
