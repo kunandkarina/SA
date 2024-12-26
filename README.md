@@ -1,3 +1,3 @@
 # System admins
-- Instructor: [Prof. Meng-Hsun Tsai](https://sites.google.com/view/wei-cecnl/](https://people.cs.nycu.edu.tw/~tsaimh/)
+- Instructor: [Prof. Meng-Hsun Tsai](https://people.cs.nycu.edu.tw/~tsaimh/)
 - Semester: 2024 Fall
